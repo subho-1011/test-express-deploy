@@ -9,6 +9,6 @@ import app from "./app.js";
 //     }
 // })();
 
-export const handler = app;
-
-export default app;
+export default function handler(req, res) {
+    app(req, res);
+}
