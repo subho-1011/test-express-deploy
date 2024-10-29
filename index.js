@@ -1,4 +1,9 @@
 import app from "./app.js";
 
-
-export default app;
+(async () => {
+    try {
+        await app();
+    } catch (error) {
+        console.log(error);
+    }
+})();
