@@ -3,7 +3,7 @@ import express from "express";
 const app = express();
 
 app.get("/", (req, res) => {
-    res.send("Hello, Vercel! The Express app is running successfully.");
+    res.json({ message: "Hello, Vercel! The Express app is running successfully." });
 });
 
 app.get("/test", (req, res) => {
